@@ -9,15 +9,16 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using AzureFunctions.Models;
 
-namespace AzureFunctions
+namespace AzureFunctions.Functions
 {
-    public static class SaverFunction
+    public static class Saver
     {
         [FunctionName("Saver")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             [Queue("CustomerQueue", Connection = "AzureWebJobsStorage")] IAsyncCollector<Customer> queue,
-            ILogger log) {
+            ILogger log)
+        {
             log.LogInformation("Customer request received by SaverFunction");
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
