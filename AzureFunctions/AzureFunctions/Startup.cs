@@ -22,7 +22,7 @@ namespace AzureFunctions
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
-            builder.Services.BuildServiceProvider();
+
         }
     }
 }

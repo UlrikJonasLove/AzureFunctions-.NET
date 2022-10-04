@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+vRwdHQOgvCf0D2llOn9HCqU5qbGAmEFByzfKBsu5tOiKYFsOKqSPvVIcBpBwhpcVMutU/zaYgH+RCI+DrMC7Q==",
+  "dgSpecHash": "Or0yRboAoUHq81XTqJXCSAVVhnN/5usr9Fu6vz0Q7lw24OuMppIBGC1Dws3wKFJCZDt5LOgkJlP4JWTYnEoPRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonas\\Desktop\\AzureFunctions-.NET\\AzureFunctions\\AzureFunctions.Web\\AzureFunctions.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
